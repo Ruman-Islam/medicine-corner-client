@@ -18,7 +18,7 @@ const CheckOut = () => {
             date: new Date()
         }
 
-        fetch('http://localhost:5055/addOrder', {
+        fetch('https://agile-citadel-23321.herokuapp.com/addOrder', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

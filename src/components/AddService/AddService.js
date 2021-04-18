@@ -16,7 +16,7 @@ const AddService = () => {
             price: data.price
         };
 
-        const url = 'http://localhost:5055/addService';
+        const url = 'https://agile-citadel-23321.herokuapp.com/addService';
         fetch(url, {
             method: 'POST',
             headers: {

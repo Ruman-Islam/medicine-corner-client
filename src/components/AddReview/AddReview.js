@@ -14,7 +14,7 @@ const AddReview = () => {
             imageURL: imageURL
         };
 
-        const url = 'http://localhost:5055/addReview';
+        const url = 'https://agile-citadel-23321.herokuapp.com/addReview';
         fetch(url, {
             method: 'POST',
             headers: {

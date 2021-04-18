@@ -8,7 +8,7 @@ const Services = () => {
     // const [allServices, setAllServices] = useState([]);
     const [loggedInUser, setLoggedInUser, allServices, setAllServices] = useContext(userContext)
     useEffect(() => {
-        fetch('http://localhost:5055/all')
+        fetch('https://agile-citadel-23321.herokuapp.com/all')
             .then(res => res.json())
             .then(data => {
                 setAllServices(data)

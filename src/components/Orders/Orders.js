@@ -7,7 +7,7 @@ const Orders = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5055/getOrder?name=' + loggedInUser.name)
+        fetch('https://agile-citadel-23321.herokuapp.com/getOrder?name=' + loggedInUser.name)
             .then(res => res.json())
             .then(data => setData(data))
     }, [])

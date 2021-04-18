@@ -15,7 +15,7 @@ const AddProduct = () => {
             catagory: data.catagory
         };
 
-        const url = 'http://localhost:5055/addProduct';
+        const url = 'https://agile-citadel-23321.herokuapp.com/addProduct';
         fetch(url, {
             method: 'POST',
             headers: {
