@@ -8,7 +8,7 @@ const AddReview = () => {
     const [imageURL, setImageURL] = useState(null);
     const onSubmit = data => {
         const reviewData = {
-            name: data.name,
+            userName: data.name,
             quote: data.quote,
             catagory: data.catagory,
             imageURL: imageURL

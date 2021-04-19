@@ -5,6 +5,7 @@ import OrderDetails from '../OrderDetails/OrderDetails';
 const Orders = () => {
     const [loggedInUser, setLoggedInUser, allProducts, setAllProducts] = useContext(userContext);
     const [data, setData] = useState([]);
+    console.log('user ',loggedInUser)
 
     useEffect(() => {
         fetch('https://agile-citadel-23321.herokuapp.com/getOrder?name=' + loggedInUser.name)
@@ -15,7 +16,7 @@ const Orders = () => {
 
     return (
         <div className="container">
-            <h1 style={{ textAlign: 'center' }}>Order List </h1>
+            <h1 style={{ textAlign: 'center' }}>Order List </h1><br/>
             <h3 style={{ textAlign: 'center' }}>{loggedInUser.name}</h3>
             <div className="row">
                 {
